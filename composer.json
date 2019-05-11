@@ -1,0 +1,21 @@
+{
+    "name": "encryptorcode/php-oauth-login",
+    "description": "An authentication framework which lets you to configure any type of authentication using OAuth (includes login with Google, Facebook, Github etc.) all with user management in your control.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abhay Jatin Doshi",
+            "email": "ajd1996@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "encryptorcode\\authentication\\": "src/"
+        }
+    },
+    "require": {
+        "encryptorcode/php-http-client": "^1.0",
+        "encryptorcode/php-server-utils": "^1.0"
+    }
+}
