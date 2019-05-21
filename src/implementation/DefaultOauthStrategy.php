@@ -46,8 +46,7 @@ abstract class DefaultOauthStrategy implements OauthStrategy{
             ->formParam("refresh_token",$refreshToken)
             ->formParam("client_id",$this->details->clientId)
             ->formParam("client_secret",$this->details->clientSecret)
-            ->formParam("redirect_uri",$this->details->redirectUri)
-            ->formParam("grant_type","authorization_code")
+            ->formParam("grant_type","refresh_token")
             ->getResponse();
 
         $token = $this->helper->readToken($response->getBody());

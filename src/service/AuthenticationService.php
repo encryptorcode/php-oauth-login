@@ -4,6 +4,7 @@ namespace encryptorcode\authentication\service;
 use encryptorcode\server\request\Request as Request;
 use encryptorcode\server\response\RedirectResponse as RedirectResponse;
 use encryptorcode\authentication\server\AuthRequest as AuthRequest;
+use encryptorcode\authentication\oauth\OauthException as OauthException;
 
 define("AUTH_USER_KEY","encryptorcode.authentication.user");
 define("AUTH_SESSION_KEY","encryptorcode.authentication.session");
@@ -45,7 +46,7 @@ class AuthenticationService{
         $strategyName = Request::param("strategy");
         if(isset($strategyName)){
             $strategy = $this->strategyLoader->get($strategyName);
-            $_SESSION[SESSION_REDIRECT_KEY] = $redirect;
+            $_SESSION[SESSION_REDIRECT_KEY] = Request::param("redirect");
             $this->doRedirection($strategy->getLoginUrl($strategyName));
             return;
         }

@@ -58,7 +58,7 @@ class AuthRequest extends Request{
         // fetching new access token if the token is expired
         if(self::isTimePassed($token->getExpiryTime())){
             $strategy = $strategyLoader->get($session->getOauthStrategy());
-            $token = $strategy->regenerateToken($token->getRefreshToken());
+            $newToken = $strategy->regenerateToken($token->getRefreshToken());
             $newToken->setRefreshToken($token->getRefreshToken());
             $sessionStorage->updateSessionToken($sessionIdentifier,$newToken);
         }
