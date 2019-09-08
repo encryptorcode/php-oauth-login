@@ -6,7 +6,7 @@ class OauthToken implements \JsonSerializable{
     private $refreshToken;
     private $expiryTime;
 
-    public function __construct(string $accessToken, string $refreshToken, int $expiryTime) {
+    public function __construct(?string $accessToken, ?string $refreshToken, ?int $expiryTime) {
         $this->accessToken = $accessToken;
         $this->refreshToken = $refreshToken;
         $this->expiryTime = $expiryTime;

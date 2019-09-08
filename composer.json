@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "encryptorcode/php-http-client": "^1.0",
-        "encryptorcode/php-server-utils": "^1.0"
+        "encryptorcode/php-http-client": "v1.0.0",
+        "encryptorcode/php-server-utils": "v1.0.1"
     }
 }

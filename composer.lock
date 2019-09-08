@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f0d54fa47f6a0c46fee00ed0bd1bc5e",
+    "content-hash": "914b974ddfd380632f0cb57220ddc8f4",
     "packages": [
         {
             "name": "encryptorcode/php-http-client",
@@ -41,16 +41,16 @@
         },
         {
             "name": "encryptorcode/php-server-utils",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/encryptorcode/php-server-utils.git",
-                "reference": "eac9deb00bc23202286654c4b3e38720b6005e55"
+                "reference": "e8689806a5c624b2dbfb822f64ea3855053f5aca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/encryptorcode/php-server-utils/zipball/eac9deb00bc23202286654c4b3e38720b6005e55",
-                "reference": "eac9deb00bc23202286654c4b3e38720b6005e55",
+                "url": "https://api.github.com/repos/encryptorcode/php-server-utils/zipball/e8689806a5c624b2dbfb822f64ea3855053f5aca",
+                "reference": "e8689806a5c624b2dbfb822f64ea3855053f5aca",
                 "shasum": ""
             },
             "type": "library",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "A bunch of classes used for handling requests and response seamlessly...",
-            "time": "2019-05-11T15:17:52+00:00"
+            "time": "2019-09-08T12:30:55+00:00"
         }
     ],
     "packages-dev": [],

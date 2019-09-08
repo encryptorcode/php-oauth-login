@@ -82,24 +82,13 @@ class AuthenticationService{
                 throw new OauthException("User was not allowed to login.");
             }
 
-            $fullName = $authUser->getFullName();
-            if(!isset($fullName)){
-                $authUser->setFullName($oauthUser->getFullName());
-            }
-
-            $name = $authUser->getName();
-            if(!isset($name)){
-                $authUser->setName($oauthUser->getName());
-            }
-
-            $profile = $authUser->getProfileImage();
-            if(!isset($profile)){
-                $authUser->setProfileImage($oauthUser->getProfileImage());
-            }
-
             $strategyVsIdMap = $authUser->getStrategyVsIdMap();
             if(!isset($strategyVsIdMap)){
                 $strategyVsIdMap = array();
+
+                $authUser->setFullName($oauthUser->getFullName());
+                $authUser->setName($oauthUser->getName());
+                $authUser->setProfileImage($oauthUser->getProfileImage());
             }
 
             $strategyVsIdMap[$strategyName] = $oauthUser->getOauthId();
