@@ -83,7 +83,7 @@ class AuthenticationService{
             }
 
             $strategyVsIdMap = $authUser->getStrategyVsIdMap();
-            if(!isset($strategyVsIdMap)){
+            if(!isset($strategyVsIdMap) || count($strategyVsIdMap) == 0){
                 $strategyVsIdMap = array();
 
                 $authUser->setFullName($oauthUser->getFullName());

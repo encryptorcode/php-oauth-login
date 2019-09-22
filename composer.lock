@@ -45,12 +45,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/encryptorcode/php-server-utils.git",
-                "reference": "e8689806a5c624b2dbfb822f64ea3855053f5aca"
+                "reference": "0b0d37ebeb1a8d9a206c52dea7367f4c2b3ea3b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/encryptorcode/php-server-utils/zipball/e8689806a5c624b2dbfb822f64ea3855053f5aca",
-                "reference": "e8689806a5c624b2dbfb822f64ea3855053f5aca",
+                "url": "https://api.github.com/repos/encryptorcode/php-server-utils/zipball/0b0d37ebeb1a8d9a206c52dea7367f4c2b3ea3b0",
+                "reference": "0b0d37ebeb1a8d9a206c52dea7367f4c2b3ea3b0",
                 "shasum": ""
             },
             "type": "library",
